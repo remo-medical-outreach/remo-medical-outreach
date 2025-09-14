@@ -1,0 +1,1 @@
+import Nav from '../components/Nav';import Footer from '../components/Footer';export default function Home(){return <div><Nav/><main className='p-10 text-center'><h1 className='text-4xl font-bold text-red-600'>Free Medical Care for Millions in Nigeria</h1></main><Footer/></div>}
