@@ -12,16 +12,15 @@ export default function Home() {
             Welcome to Remo Medical Outreach
           </h1>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            We provide free medical care and health education to underserved
-            communities across Nigeria. Together, we bring hope, healing, and
-            compassion to millions.
+            Providing free medical care to underserved communities across Nigeria. 
+            Our mission is to bring hope, healing, and compassion to millions.
           </p>
         </section>
 
         {/* Programs Section */}
         <section className="my-16">
           <h2 className="text-2xl font-bold mb-6 text-red-600 text-center">
-            Our Key Programs
+            Our Programs
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="p-6 border rounded-lg shadow hover:shadow-lg transition">
