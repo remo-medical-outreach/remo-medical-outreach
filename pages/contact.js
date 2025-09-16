@@ -1,25 +1,50 @@
-import Nav from "../components/Nav"
-import Footer from "../components/Footer"
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   return (
     <>
       <Nav />
-      <main className="min-h-screen bg-white text-gray-800 px-6 py-12">
-        <h1 className="text-4xl font-bold text-red-600 mb-6">Contact Us</h1>
-        <p className="mb-6 text-lg">
-          Have questions or want to volunteer? Fill out the form below or reach us on WhatsApp.
+      <main className="px-6 py-12 max-w-3xl mx-auto">
+        <h1 className="text-3xl font-bold text-red-600 mb-6">Contact Us</h1>
+        <p className="mb-6 text-gray-700">
+          Have questions or want to reach us? Fill out the form below, and our team will respond as soon as possible.
         </p>
-        <form className="max-w-xl space-y-4">
-          <input type="text" placeholder="Your Name" className="w-full border p-3 rounded" />
-          <input type="email" placeholder="Your Email" className="w-full border p-3 rounded" />
-          <textarea placeholder="Your Message" className="w-full border p-3 rounded h-32"></textarea>
-          <button className="bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700">
+
+        <form
+          action="https://formspree.io/f/mldwkqzd"
+          method="POST"
+          className="space-y-4"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            className="w-full p-3 border rounded"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            className="w-full p-3 border rounded"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+            className="w-full p-3 border rounded"
+          ></textarea>
+          <button
+            type="submit"
+            className="bg-red-600 text-white px-6 py-2 rounded shadow"
+          >
             Send Message
           </button>
         </form>
       </main>
       <Footer />
     </>
-  )
+  );
 }
