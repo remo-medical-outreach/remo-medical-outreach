@@ -55,7 +55,7 @@ export default function Donate() {
         </div>
 
         {/* Bank Transfer Details */}
-        <div className="max-w-md mx-auto bg-gray-50 p-6 rounded-lg shadow-md">
+        <div className="max-w-md mx-auto bg-gray-50 p-6 rounded-lg shadow-md mb-6">
           <h2 className="text-2xl font-semibold mb-4 text-red-500">Donate via Bank Transfer</h2>
           <p className="text-lg mb-4">
             <strong>Bank:</strong> Zenith Bank Plc <br />
@@ -68,6 +68,18 @@ export default function Donate() {
           >
             Copy Account Number
           </button>
+        </div>
+
+        {/* WhatsApp Contact */}
+        <div className="max-w-md mx-auto mt-6">
+          <a
+            href="https://wa.me/2348135165692"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700"
+          >
+            💬 Contact us on WhatsApp
+          </a>
         </div>
       </main>
       <Footer />
